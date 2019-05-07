@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B2FF59">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event Name"
+            style="@style/ReminderAppTheme"
+            android:fontFamily="casual"
+            android:width="150dp"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            style="@style/ReminderAppTheme"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:id="@+id/name_text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            style="@style/ReminderAppTheme"
+            android:width="150dp"
+            android:fontFamily="casual"
+            android:text="Event Date" />
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Input Date"
+            android:fontFamily="casual"
+            style="@style/ReminderAppTheme"
+            android:layout_height="wrap_content"
+            android:id="@+id/date_text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="When to Remind"
+            android:fontFamily="casual"
+            style="@style/ReminderAppTheme"
+            android:width="150dp"
+            android:textSize="20sp"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:text="Input Time"
+            android:fontFamily="casual"
+            style="@style/ReminderAppTheme"
+            android:layout_height="wrap_content"
+            android:id="@+id/time_text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:fontFamily="casual"
+            style="@style/ReminderAppTheme"
+            android:width="150dp"
+            android:textSize="20sp"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            style="@style/ReminderAppTheme"
+            android:lines="4"
+            android:layout_height="wrap_content"
+            android:id="@+id/desc_text"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:fontFamily="casual"
+            style="@style/ReminderAppTheme"
+            android:width="150dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:inputType="number"
+            style="@style/ReminderAppTheme"
+            android:fontFamily="casual"
+            android:layout_height="wrap_content"
+            android:id="@+id/id_text"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_add_rem"
+        style="@style/ReminderAppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custombutton"
+        android:text="Add Reminder"
+        android:textSize="25sp" />
+
+
+</LinearLayout>
