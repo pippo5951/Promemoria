@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Event Name"
+            android:text="Nome evento"
             style="@style/ReminderAppTheme"
             android:fontFamily="casual"
             android:width="150dp"
@@ -41,7 +41,7 @@
             style="@style/ReminderAppTheme"
             android:width="150dp"
             android:fontFamily="casual"
-            android:text="Event Date" />
+            android:text="Data evento" />
         <EditText
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -60,7 +60,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="When to Remind"
+            android:text="Quando ricordare?"
             android:fontFamily="casual"
             style="@style/ReminderAppTheme"
             android:width="150dp"
@@ -85,7 +85,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:text="Descrizione"
             android:fontFamily="casual"
             style="@style/ReminderAppTheme"
             android:width="150dp"
@@ -126,7 +126,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Update Reminder"
+        android:text="Aggiorna promemoria"
         android:layout_marginTop="40dp"
         android:textSize="25sp"
         android:id="@+id/button_update_rem"

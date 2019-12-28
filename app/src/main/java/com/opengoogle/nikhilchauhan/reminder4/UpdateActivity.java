@@ -84,7 +84,7 @@ public class UpdateActivity extends AppCompatActivity {
         Cursor res = myDb.getAllData();
         if (res.getCount() == 0) {
             //show message
-            Toast.makeText(UpdateActivity.this,"Data Not Found",Toast.LENGTH_SHORT).show();
+            Toast.makeText(UpdateActivity.this,"Promemoria non trovato",Toast.LENGTH_SHORT).show();
             return;
         }
         int result = Integer.parseInt(get_string);
@@ -108,12 +108,14 @@ public class UpdateActivity extends AppCompatActivity {
                 boolean isUpdate = myDb.UpdateData(id_text.getText().toString(), name_text.getText().toString(), date_text.getText().toString(), time_text.getText().toString(), desc_text.getText().toString());
 
                 if (isUpdate == true) {
-                    Toast.makeText(UpdateActivity.this, "Updation Successful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateActivity.this, "Promemoria aggiornato", Toast.LENGTH_SHORT).show();
 
                 } else {
-                    Toast.makeText(UpdateActivity.this, "Updation UnSuccessful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateActivity.this, "Promemoria non aggiornato", Toast.LENGTH_SHORT).show();
 
                 }
+                Intent it = new Intent( UpdateActivity.this, MainActivity.class );
+                startActivity(it);
 
             }
         });

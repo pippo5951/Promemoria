@@ -50,7 +50,7 @@ public class FirstUpdate extends AppCompatActivity {
 
                 if (res.getCount() == 0) {
                     //show message
-                    Toast.makeText(FirstUpdate.this,"No Data Found",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FirstUpdate.this,"Promemoria non trovato",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 else

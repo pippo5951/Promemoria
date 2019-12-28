@@ -72,17 +72,17 @@ public class MainActivity extends AppCompatActivity {
                 Cursor res = myDb.getAllData();
                 if (res.getCount() == 0) {
                     //show message
-                    showMessage("Error ", "Nothing found");
+                    showMessage("Error ", "NNon abbiamo trovato nulla");
                     return;
                 }
                 StringBuffer buffer = new StringBuffer();
 
                 while (res.moveToNext()) {
                     buffer.append("Id :" + res.getString(0) + "\n");
-                    buffer.append("Name :" + res.getString(1) + "\n");
-                    buffer.append("Date :" + res.getString(2) + "\n");
+                    buffer.append("Nome :" + res.getString(1) + "\n");
+                    buffer.append("Data :" + res.getString(2) + "\n");
                     buffer.append("Time :" + res.getString(3) + "\n");
-                    buffer.append("Description: "+res.getString(4)+"\n\n");
+                    buffer.append("Descrizione: "+res.getString(4)+"\n\n");
                 }
                 //show the data
                 showMessage("Data", buffer.toString());

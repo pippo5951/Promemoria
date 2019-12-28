@@ -13,7 +13,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Event Name"
+            android:text="Nome evento"
             android:fontFamily="casual"
             android:width="150dp"
             android:textSize="20sp" />
@@ -35,7 +35,7 @@
             android:textSize="20sp"
             android:width="150dp"
             android:fontFamily="casual"
-            android:text="Event Date" />
+            android:text="Data dell'evento" />
         <TextView
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -52,7 +52,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="When to Remind"
+            android:text="Quando ricordare"
             android:fontFamily="casual"
             android:width="150dp"
             android:textSize="20sp"/>
@@ -74,7 +74,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:text="Descrizione"
             android:fontFamily="casual"
             android:width="150dp"
             android:textSize="20sp"/>

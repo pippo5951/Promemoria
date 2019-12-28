@@ -159,9 +159,9 @@ public class AddReminder extends AppCompatActivity {
                 boolean isInserted = myDb.insertData(name_text.getText().toString(), date_text.getText().toString(), time_text.getText().toString(), desc_text.getText().toString());
 
                 if (isInserted == true) {
-                    Toast.makeText(AddReminder.this, "alarm scheduled Successfully", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddReminder.this, "allarme programmato correttamente", Toast.LENGTH_LONG).show();
                 } else {
-                    Toast.makeText(AddReminder.this, "Error setting alarm", Toast.LENGTH_LONG).show();
+                    Toast.makeText(AddReminder.this, "Errore durante l'impostazione dell'allarme", Toast.LENGTH_LONG).show();
                 }
                 final Calendar calendar = Calendar.getInstance();
                 my_intent = new Intent(AddReminder.this, AlarmReceiver.class);
@@ -188,7 +188,8 @@ public class AddReminder extends AppCompatActivity {
 
                 alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
 
-
+                Intent it = new Intent( AddReminder.this, MainActivity.class );
+                startActivity(it);
             }
 
         });

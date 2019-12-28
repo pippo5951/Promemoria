@@ -12,14 +12,16 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginLeft="10dp">
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Event Name"
+            android:text="Nome evento"
             style="@style/ReminderAppTheme"
             android:fontFamily="casual"
             android:width="150dp"
             android:textSize="20sp" />
+
         <EditText
             android:layout_width="0dp"
             android:layout_weight="1"
@@ -41,12 +43,12 @@
             style="@style/ReminderAppTheme"
             android:width="150dp"
             android:fontFamily="casual"
-            android:text="Event Date" />
+            android:text="Data dell'evento" />
         <Button
             android:layout_width="0dp"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:text="Input Date"
+            android:text="Iserisci data"
             android:fontFamily="casual"
             style="@style/ReminderAppTheme"
             android:layout_height="wrap_content"
@@ -60,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="When to Remind"
+            android:text="Quando ricordare"
             android:fontFamily="casual"
             style="@style/ReminderAppTheme"
             android:width="150dp"
@@ -69,7 +71,7 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:textSize="20sp"
-            android:text="Input Time"
+            android:text="Inserisci ora"
             android:fontFamily="casual"
             style="@style/ReminderAppTheme"
             android:layout_height="wrap_content"
@@ -85,7 +87,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Description"
+            android:text="Descrizione"
             android:fontFamily="casual"
             style="@style/ReminderAppTheme"
             android:width="150dp"
@@ -132,7 +134,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:background="@drawable/custombutton"
-        android:text="Add Reminder"
+        android:text="Aggiungi promemoria"
         android:textSize="25sp" />
 
 

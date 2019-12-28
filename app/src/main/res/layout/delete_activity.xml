@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Enter the id of the event You want to delete"
+        android:text="Immetti l'id dell'evento che desideri eliminare"
         android:textSize="20sp"
         android:layout_marginTop="120dp"
         android:layout_marginBottom="20dp"
@@ -26,7 +26,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Delete Reminder"
+        android:text="Elimina promemoriar"
         android:id="@+id/button_del_rem"
         android:layout_marginTop="40dp"
         android:textSize="25sp"

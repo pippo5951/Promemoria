@@ -59,12 +59,14 @@ public class DeleteReminder extends AppCompatActivity {
             public void onClick(View v) {
                 Integer deleteRows = myDb.Deletedata(delete_id_text.getText().toString());
                 if (deleteRows > 0) {
-                    Toast.makeText(DeleteReminder.this, "Deletion Successful", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DeleteReminder.this, "Eliminazione riuscita", Toast.LENGTH_SHORT).show();
 
                 } else {
-                    Toast.makeText(DeleteReminder.this, "No rows deletes", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DeleteReminder.this, "Eliminazione non riuscita", Toast.LENGTH_SHORT).show();
 
                 }
+                Intent it = new Intent( DeleteReminder.this, MainActivity.class );
+                startActivity(it);
             }
         });
     }

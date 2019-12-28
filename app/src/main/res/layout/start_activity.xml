@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:text="Add Reminder"
+        android:text="Aggiundi promemoria"
         android:id="@+id/add_reminder"
         android:background="#1B5E20"
         android:textSize="30sp"
@@ -17,7 +17,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:text="View Reminder"
+        android:text="Vedi promemoria"
         android:id="@+id/view_reminder"
         android:fontFamily="casual"
         android:background="#880E4F"
@@ -27,7 +27,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:text="Update Reminder"
+        android:text="Aggiorna promemoria"
         android:fontFamily="casual"
         android:textSize="30sp"
         android:id="@+id/update_reminder"
@@ -37,7 +37,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:text="Delete Reminder"
+        android:text="Cancella promemoria"
         android:fontFamily="casual"
         android:textSize="30sp"
         android:id="@+id/delete_reminder"
